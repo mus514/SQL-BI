@@ -42,8 +42,6 @@ FROM [Production].[Product] as p
 INNER JOIN [Production].[ProductSubcategory] AS ps ON ps.ProductSubcategoryID = p.ProductSubcategoryID
 ORDER BY ps.Name ASC, p.Name DESC
 
-
-
 SELECT p.Name
 FROM [Production].[Product] AS p
 WHERE p.Name LIKE '%Thin%'
